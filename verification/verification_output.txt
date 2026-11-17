@@ -1,0 +1,21 @@
+1. Black-Scholes ATM call
+   d1 1.0514  d2 0.4872  N(d1) 0.8535  N(d2) 0.6869
+   call per oz $1,898.94   cost of 100% participation per $100 note $40.84
+
+2. Participation rate and fair cap, by compounding convention
+   continuous (workbook, report)  ZCB $64.79  budget $32.21  participation 78.87%  fair cap +138.8%
+   annual (other LLM)             ZCB $65.39  budget $31.61  participation 77.41%  fair cap +132.7%
+
+3. Volatility sensitivity (continuous compounding, budget fixed)
+   sigma  15.00%  call cost $ 38.88  participation 82.85%
+   sigma  17.84%  call cost $ 40.84  participation 78.87%
+   sigma  20.00%  call cost $ 42.45  participation 75.88%
+   sigma  25.00%  call cost $ 46.40  participation 69.42%
+   sigma  30.00%  call cost $ 50.47  participation 63.82%
+   sigma  35.00%  call cost $ 54.54  participation 59.06%
+   sigma  37.04%  call cost $ 56.17  participation 57.34%
+
+4. GVZ volatility inputs
+   1257 observations, 2021-04-09 to 2026-04-09, mean 17.85
+   mean using only data up to 2026-04-06: 17.81 (1254 observations)
+   reading on 2026-04-06: 37.04

@@ -1,0 +1,6 @@
+participation 78.8709%  option value t=0 per $100: 32.21 (budget 32.21)
+ITM 71  OTM 29
+S_T mean 6,913 median 6,496 max 17,180 min 1,966
+option value at T per $100: mean 44.70 max 212.53
+payout min 10,000,000 mean 14,469,969 median 13,130,814 max 31,253,408
+discounted mean option payoff per $100: 28.96
