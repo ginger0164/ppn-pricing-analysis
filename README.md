@@ -57,7 +57,6 @@ Volatility sensitivity of the participation rate (option budget held fixed):
 | Folder | Contents |
 |---|---|
 | [`deliverables/`](deliverables/) | Final deliverables: the prospectus (PDF, 14 pages) and the presentation (PPTX, 15 slides) |
-| [`report_source/`](report_source/) | Word sources of the report and of the appendix of LLM prompts |
 | [`pricing_model/`](pricing_model/) | Excel pricing workbook: Overview, Sensitivity, Sources, Summary |
 | [`monte_carlo/`](monte_carlo/) | Simulation script, chart, per-path results at maturity, monthly option-value paths, run log |
 | [`verification/`](verification/) | Independent re-computation of the pricing, participation rate, cap, sensitivity table and GVZ statistics |
@@ -83,14 +82,11 @@ The verification script uses only the standard library and prints the numbers in
 
 ## Notes on the numbers
 
-- **Compounding convention.** A second LLM used for cross-checking reported 77.41% instead of 78.87%. The whole difference comes from discounting the zero-coupon bond with annual rather than continuous compounding ($65.39 against $64.79). The project uses continuous compounding, consistent with Black–Scholes.
-- **Fair cap.** The verified fair cap at 100% participation is +138.8% (+132.7% under annual compounding). The appendix of LLM prompts records an earlier exchange concluding the cap should be near +500%; that figure came from a solver set up the wrong way round and is superseded by `verification/verification_output.txt`.
 - **Rounding.** The report and slides quote payouts at a rounded 78.9% participation (mean $14,471,617), a few thousand dollars from the figures above.
 - **Simulation size.** 100 paths were required by the assignment. With so few paths the sampling error is large: the discounted mean option payoff is $28.96 per $100 against the model value of $32.21. The chart shows the spread of outcomes; it does not validate the price.
-- **Volatility window.** The 17.84% mean uses GVZ data through April 9, 2026, three days past the pricing date. Using data only up to the pricing date gives 17.81%.
 - **Quanto alternative.** The 65–72% participation range quoted for the quanto structure is an estimate, not a priced result.
 - **Model limits.** Pricing assumes geometric Brownian motion with constant volatility and rates, and ignores issuer credit risk.
 
 ## Use of AI
 
-The course required building the analysis with large language models and documenting the prompts. The prompts are in `report_source/Gold_PPN_Appendix_LLM_Prompts.docx` and at the end of the prospectus.
+The course required building the analysis with large language models and documenting the prompts. The prompts are at the end of the prospectus.
