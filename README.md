@@ -1,7 +1,7 @@
 # Gold-Linked Principal Protected Note: Pricing and Analysis
 
 Design and pricing of a $10,000,000, 10-year principal protected note (PPN) linked to the spot price of gold.
-Group project for *AI in Finance*, M.A. Economics, Duke University (Spring 2026). Pricing date: April 6, 2026.
+Group project for *AI in Finance*, Duke University (Spring 2026). Pricing date: April 6, 2026.
 
 > **Academic exercise.** The assignment was to act as a bank's structured products desk pitching to a hypothetical private wealth client ("Golden Woman"). The deliverables are styled as a Goldman Sachs prospectus for that role-play only. Nothing here is affiliated with or endorsed by Goldman Sachs, and nothing here is investment advice or an offer of securities.
 
